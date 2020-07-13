@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.company.primerproyectorestassured.features.RedmineOtherTests
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.019 s <<< FAILURE! - in com.company.primerproyectorestassured.features.RedmineOtherTests
+getFirstIssueSubject  Time elapsed: 1.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path issues[3].subject doesn't match.
+Expected: Mi issue actualizado desde RestAssured.
+  Actual: Mi issue XML actualizado desde Postman
+
+	at com.company.primerproyectorestassured.features.RedmineOtherTests.getFirstIssueSubject(RedmineOtherTests.java:34)
+
+getIssueStarDate  Time elapsed: 0.105 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path issue.star_date doesn't match.
+Expected: 2020-04-25
+  Actual: null
+
+	at com.company.primerproyectorestassured.features.RedmineOtherTests.getIssueStarDate(RedmineOtherTests.java:24)
+

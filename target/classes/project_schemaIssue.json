@@ -1,0 +1,463 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "issue": {
+        "id": 4,
+        "project": {
+          "id": 1,
+          "name": "ProyectoPrueba"
+        },
+        "tracker": {
+          "id": 1,
+          "name": "Bug"
+        },
+        "status": {
+          "id": 1,
+          "name": "New"
+        },
+        "priority": {
+          "id": 1,
+          "name": "Low"
+        },
+        "author": {
+          "id": 1,
+          "name": "Redmine Admin"
+        },
+        "subject": "Mi issue XML actualizado desde Postman",
+        "description": "As an admin user, I cannot create an user when xml...",
+        "start_date": "2020-04-25",
+        "due_date": null,
+        "done_ratio": 0,
+        "is_private": false,
+        "estimated_hours": null,
+        "total_estimated_hours": null,
+        "spent_hours": 0.0,
+        "total_spent_hours": 0.0,
+        "created_on": "2020-04-25T16:41:50Z",
+        "updated_on": "2020-05-20T02:34:36Z",
+        "closed_on": null
+      }
+    }
+  ],
+  "required": [
+    "issue"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "issue": {
+      "$id": "#/properties/issue",
+      "type": "object",
+      "title": "The issue schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "id": 4,
+          "project": {
+            "id": 1,
+            "name": "ProyectoPrueba"
+          },
+          "tracker": {
+            "id": 1,
+            "name": "Bug"
+          },
+          "status": {
+            "id": 1,
+            "name": "New"
+          },
+          "priority": {
+            "id": 1,
+            "name": "Low"
+          },
+          "author": {
+            "id": 1,
+            "name": "Redmine Admin"
+          },
+          "subject": "Mi issue XML actualizado desde Postman",
+          "description": "As an admin user, I cannot create an user when xml...",
+          "start_date": "2020-04-25",
+          "due_date": null,
+          "done_ratio": 0,
+          "is_private": false,
+          "estimated_hours": null,
+          "total_estimated_hours": null,
+          "spent_hours": 0.0,
+          "total_spent_hours": 0.0,
+          "created_on": "2020-04-25T16:41:50Z",
+          "updated_on": "2020-05-20T02:34:36Z",
+          "closed_on": null
+        }
+      ],
+      "required": [
+        "id",
+        "project",
+        "tracker",
+        "status",
+        "priority",
+        "author",
+        "subject",
+        "description",
+        "start_date",
+        "due_date",
+        "done_ratio",
+        "is_private",
+        "estimated_hours",
+        "total_estimated_hours",
+        "spent_hours",
+        "total_spent_hours",
+        "created_on",
+        "updated_on",
+        "closed_on"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "$id": "#/properties/issue/properties/id",
+          "type": "integer",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            4
+          ]
+        },
+        "project": {
+          "$id": "#/properties/issue/properties/project",
+          "type": "object",
+          "title": "The project schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": 1,
+              "name": "ProyectoPrueba"
+            }
+          ],
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "$id": "#/properties/issue/properties/project/properties/id",
+              "type": "integer",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "name": {
+              "$id": "#/properties/issue/properties/project/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "ProyectoPrueba"
+              ]
+            }
+          }
+        },
+        "tracker": {
+          "$id": "#/properties/issue/properties/tracker",
+          "type": "object",
+          "title": "The tracker schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": 1,
+              "name": "Bug"
+            }
+          ],
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "$id": "#/properties/issue/properties/tracker/properties/id",
+              "type": "integer",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "name": {
+              "$id": "#/properties/issue/properties/tracker/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "Bug"
+              ]
+            }
+          }
+        },
+        "status": {
+          "$id": "#/properties/issue/properties/status",
+          "type": "object",
+          "title": "The status schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": 1,
+              "name": "New"
+            }
+          ],
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "$id": "#/properties/issue/properties/status/properties/id",
+              "type": "integer",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "name": {
+              "$id": "#/properties/issue/properties/status/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "New"
+              ]
+            }
+          }
+        },
+        "priority": {
+          "$id": "#/properties/issue/properties/priority",
+          "type": "object",
+          "title": "The priority schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": 1,
+              "name": "Low"
+            }
+          ],
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "$id": "#/properties/issue/properties/priority/properties/id",
+              "type": "integer",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "name": {
+              "$id": "#/properties/issue/properties/priority/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "Low"
+              ]
+            }
+          }
+        },
+        "author": {
+          "$id": "#/properties/issue/properties/author",
+          "type": "object",
+          "title": "The author schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": 1,
+              "name": "Redmine Admin"
+            }
+          ],
+          "required": [
+            "id",
+            "name"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "id": {
+              "$id": "#/properties/issue/properties/author/properties/id",
+              "type": "integer",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "name": {
+              "$id": "#/properties/issue/properties/author/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "Redmine Admin"
+              ]
+            }
+          }
+        },
+        "subject": {
+          "$id": "#/properties/issue/properties/subject",
+          "type": "string",
+          "title": "The subject schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Mi issue XML actualizado desde Postman"
+          ]
+        },
+        "description": {
+          "$id": "#/properties/issue/properties/description",
+          "type": "string",
+          "title": "The description schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "As an admin user, I cannot create an user when xml..."
+          ]
+        },
+        "start_date": {
+          "$id": "#/properties/issue/properties/start_date",
+          "type": "string",
+          "title": "The start_date schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-25"
+          ]
+        },
+        "due_date": {
+          "$id": "#/properties/issue/properties/due_date",
+          "type": "null",
+          "title": "The due_date schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "done_ratio": {
+          "$id": "#/properties/issue/properties/done_ratio",
+          "type": "integer",
+          "title": "The done_ratio schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "is_private": {
+          "$id": "#/properties/issue/properties/is_private",
+          "type": "boolean",
+          "title": "The is_private schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "estimated_hours": {
+          "$id": "#/properties/issue/properties/estimated_hours",
+          "type": "null",
+          "title": "The estimated_hours schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "total_estimated_hours": {
+          "$id": "#/properties/issue/properties/total_estimated_hours",
+          "type": "null",
+          "title": "The total_estimated_hours schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "spent_hours": {
+          "$id": "#/properties/issue/properties/spent_hours",
+          "type": "number",
+          "title": "The spent_hours schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0.0,
+          "examples": [
+            0.0
+          ]
+        },
+        "total_spent_hours": {
+          "$id": "#/properties/issue/properties/total_spent_hours",
+          "type": "number",
+          "title": "The total_spent_hours schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0.0,
+          "examples": [
+            0.0
+          ]
+        },
+        "created_on": {
+          "$id": "#/properties/issue/properties/created_on",
+          "type": "string",
+          "title": "The created_on schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-25T16:41:50Z"
+          ]
+        },
+        "updated_on": {
+          "$id": "#/properties/issue/properties/updated_on",
+          "type": "string",
+          "title": "The updated_on schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-05-20T02:34:36Z"
+          ]
+        },
+        "closed_on": {
+          "$id": "#/properties/issue/properties/closed_on",
+          "type": "null",
+          "title": "The closed_on schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      }
+    }
+  }
+}
